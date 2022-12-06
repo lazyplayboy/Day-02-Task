@@ -1,0 +1,44 @@
+Difference between Document & and window objects.
+
+Document 
+
+The document object is a property of the window object.
+
+The document object represent a web page that is loaded in the browser.
+
+The accessing the document object, we can access the element in the HTML page.
+
+With the help of document objects, we can add dynamic content to our web page.
+
+The document object can be accessed with a window.document or just document.
+
+Properties of document:
+
+activeElement: It returns the currently active elements in the document.
+
+body: It returns the contents of the body element.
+
+anchors: It returns all <a> elements that have a name attribute.
+
+baseURI: It returns a string value that represents the base URI of the document.
+
+cookie: It returns the cookie of the current document.
+
+Window objects:
+
+The window object has many useful properties like the location object and the setTimeout function.
+
+The window object is the topmost object of the DOM hierarchy. 
+
+ It represents a browser window or frame that displays the contents of the webpage. 
+
+Whenever a window appears on the screen to display the contents of the document, the window object is created .
+
+Properties of the window:
+
+Closed: It holds a Boolean value that represents whether the window is closed or not.
+
+console: It returns a reference to the console object which provides access to the browser’s debugging console.
+
+defaultStatus: It is used to define the default message that will be displayed in the status bar when no activity is carried on by the browser.
+
