@@ -1,44 +1,61 @@
-Difference between Document & and window objects.
+DIFFERENCE BETWEEN WINDOW OBJECT AND DOCUMENT OBJECT 
 
-Document 
+WINDOW OBJECT
+It represents a browser window or frame that displays the contents of the webpage.
+It is the very first object that is loaded in the browser.
+It is the object of the browser.
+Members of the window object -Global objects, functions, variables of JavaScript .
+It's part of BOM ( Browser Object Model), Not a DOM ( Document Object Model)
+We can access the window from the window only.  i.e. window.window.
+The window object cannot be accessed by the document object.
 
-The document object is a property of the window object.
-
-The document object represent a web page that is loaded in the browser.
-
-The accessing the document object, we can access the element in the HTML page.
-
-With the help of document objects, we can add dynamic content to our web page.
-
-The document object can be accessed with a window.document or just document.
-
-Properties of document:
-
-activeElement: It returns the currently active elements in the document.
-
-body: It returns the contents of the body element.
-
-anchors: It returns all <a> elements that have a name attribute.
-
-baseURI: It returns a string value that represents the base URI of the document.
-
-cookie: It returns the cookie of the current document.
-
-Window objects:
-
-The window object has many useful properties like the location object and the setTimeout function.
-
-The window object is the topmost object of the DOM hierarchy. 
-
- It represents a browser window or frame that displays the contents of the webpage. 
-
-Whenever a window appears on the screen to display the contents of the document, the window object is created .
-
-Properties of the window:
-
+PROPERTIES
 Closed: It holds a Boolean value that represents whether the window is closed or not.
+Document: It returns a reference to the document object of that window.
+Console : It returns a reference to the console object which provides access to the browser’s debugging console.
+DefaultStatus :It is used to define the default message that will be displayed in the status bar when no activity is carried on by the browser.
+Controllers : It returns the XUL controller objects for the current Chrome window.
+Frames[] : It represents an array that contains all the frames of a given window.
+innerHeight :It is used to get the height of the content area of the browser window.
+innerWidth : It is used to get the width of the content area of the browser window.
+Toolbar: It will result the toolbar object, whose visibility can be toggled in the window.
 
-console: It returns a reference to the console object which provides access to the browser’s debugging console.
+METHODS
+moveTo() : Moves a window to the specified position
+open() :Opens a new browser window
+print() :Prints the content of the current window
+prompt() : Displays a dialog box that prompts the visitor for input
+SYNTAX
+Window.property_name
+example:
 
-defaultStatus: It is used to define the default message that will be displayed in the status bar when no activity is carried on by the browser.
+window.innerHeight : will return the height of the content area of the browser
 
+
+DOCUMENT OBJECT 
+It represents any HTML document or web page that is loaded in the browser.
+It is loaded inside the window.
+All the tags, elements with attributes in HTML are part of the document.
+We can access the document from a window using the window. Document
+The document is part of BOM (browser object model) and Dom (Document object model)
+
+PROPERTIES
+title : returns the name of the HTML document defined between the starting and ending tags of the TITLE element.
+URL : returns the full URL of the HTML document.
+referrer : returns the URL of all the documents referred to in an HTML document.
+readyState : returns the loading status of the document.
+documentMode :returns the mode used by the browser to process the document.
+lastModified :returns the date on which the document was last modified.
+domain: returns the domain name of the server from which the document has originated.
+Cookie : returns a report that contains all the visible and unexpired cookies associated with the document.
+
+METHODS
+createDocumentFragment() : Creates an empty DocumentFragment node.
+createElement() : Creates an Element node.
+createEvent() : Creates a new event.
+createTextNode() : Creates a Text node.
+SYNTAX
+document.property_name;
+example:
+
+     document.title :  will return the title of the document
